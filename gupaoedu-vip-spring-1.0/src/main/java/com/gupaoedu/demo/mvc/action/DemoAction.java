@@ -15,7 +15,8 @@ import com.gupaoedu.mvcframework.annotation.GPRequestParam;
 @GPRequestMapping("/demo")
 public class DemoAction {
 
-  	@GPAutowired private IDemoService demoService;
+  	@GPAutowired
+	private IDemoService demoService;
 
 	@GPRequestMapping("/query")
 	public void query(HttpServletRequest req, HttpServletResponse resp,
